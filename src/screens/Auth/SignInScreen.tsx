@@ -61,6 +61,7 @@ export const SignInScreen = ({ navigation }: any) => {
           loading={loggingIn}
           labelStyle={{
             textTransform: "none",
+            opacity: !email && !password ? 0.3 : 1,
             fontFamily: FONTS.DM_SANS.bold,
             fontSize: wp(15),
           }}>

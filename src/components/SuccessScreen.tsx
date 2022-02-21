@@ -1,5 +1,5 @@
-import { Spacer } from "components";
 import React from "react";
+import { Spacer } from "components";
 import { View, Text, StyleSheet } from "react-native";
 import { Button } from "react-native-paper";
 

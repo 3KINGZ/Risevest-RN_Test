@@ -185,6 +185,7 @@ export const HomeScreen = () => {
             ListHeaderComponent={<AddPlanButton />}
             data={plans}
             renderItem={({ item }) => <Plan plan={item} />}
+            showsHorizontalScrollIndicator={false}
           />
         </View>
 

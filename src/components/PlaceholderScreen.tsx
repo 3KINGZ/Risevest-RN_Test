@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, StyleSheet, Image } from "react-native";
 
-import { FONTS } from "themes";
+import { COLORS, FONTS } from "themes";
 import { wp } from "utils";
 
 export const PlaceholderScreen = ({ title }: { title: string }) => {
@@ -23,5 +23,6 @@ const styles = StyleSheet.create({
     fontSize: wp(20),
     fontFamily: FONTS.DM_SANS.bold,
     textTransform: "capitalize",
+    color: COLORS.black_02,
   },
 });

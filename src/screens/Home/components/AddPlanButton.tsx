@@ -14,7 +14,7 @@ export const AddPlanButton = () => {
     <TouchableOpacity
       style={styles.container}
       onPress={() =>
-        navigation.navigate(routes.app2, { screen: routes.planDetail })
+        navigation.navigate(routes.app2, { screen: routes.createPlanIntro })
       }>
       <View style={styles.addContainer}>
         <AIcon name="plus" color={COLORS.teal_01} size={wp(20)} />
