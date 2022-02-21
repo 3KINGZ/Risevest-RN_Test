@@ -166,10 +166,20 @@ export const HomeScreen = () => {
             }}>
             <Text style={styles.createPlanText}>Create a plan</Text>
 
-            <View style={{ flexDirection: "row", alignItems: "center" }}>
-              <Text style={styles.viewPlansText}>View all plans</Text>
-              <SIcon name="arrow-right" color={COLORS.grey_04} />
-            </View>
+            <TouchableOpacity
+              style={{ flexDirection: "row", alignItems: "center" }}>
+              <Text
+                style={[
+                  styles.viewPlansText,
+                  { color: plans.length ? COLORS.primary : COLORS.grey_04 },
+                ]}>
+                View all plans
+              </Text>
+              <SIcon
+                name="arrow-right"
+                color={plans.length ? COLORS.primary : COLORS.grey_04}
+              />
+            </TouchableOpacity>
           </View>
 
           <Spacer />

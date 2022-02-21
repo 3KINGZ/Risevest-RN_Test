@@ -1,5 +1,11 @@
 import React from "react";
-import { View, Text, ImageBackground, StyleSheet } from "react-native";
+import {
+  View,
+  Text,
+  ImageBackground,
+  StyleSheet,
+  Dimensions,
+} from "react-native";
 import AICon from "react-native-vector-icons/AntDesign";
 
 import { mapPlanToImage } from "helpers";
@@ -29,9 +35,9 @@ export const Plan = ({ plan }) => {
 const styles = StyleSheet.create({
   container: {
     height: hp(243),
-    width: wp(188),
+    width: Dimensions.get("window").width / 2 - 20,
     padding: 15,
-    marginLeft: 15,
+    margin: 5,
   },
   textContainer: {
     position: "absolute",
