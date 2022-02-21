@@ -45,6 +45,7 @@ export const OnboardingScreen = () => {
 
   return (
     <Swiper
+      ref={swiperRef}
       loop={false}
       onIndexChanged={index => setPaginationIndex(index)}
       activeDotColor={onboardings[paginationIndex].secondaryColor}>

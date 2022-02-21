@@ -69,6 +69,7 @@ export const PlanHeader = ({
             fontWeight: "bold",
             fontSize: wp(24),
             textAlign: "center",
+            color: "white",
           }}>
           {title}
         </Text>

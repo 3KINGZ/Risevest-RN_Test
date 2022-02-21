@@ -12,6 +12,7 @@ export const signUp = createAsyncThunk("register", async (data: any) => {
     RootNavigation.navigate(routes.createAccountSuccess);
     return response.data;
   } catch (error) {
+    console.log("error", error?.response);
     Toast.show({
       type: "error",
       text1: "Signup error",
